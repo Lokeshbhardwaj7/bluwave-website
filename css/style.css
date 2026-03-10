@@ -550,11 +550,101 @@ body {
 .product-image {
     position: relative;
     height: 250px;
-    background: var(--gray-100);
+    background: #fff;
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
+    padding: 20px;
+}
+
+.product-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+.about-main-img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+/* Product Detail Image Container */
+.product-image {
+    position: relative;
+    height: 280px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 15px 15px 0 0;
+}
+
+/* Smart Image Resizing - NO STRETCH, NO DISTORTION */
+.product-detail-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* KEY: Fits entire image without cropping or stretching */
+    object-position: center;
+    transition: transform 0.3s ease;
+}
+
+/* Optional: Slight zoom on hover */
+.product-detail-card:hover .product-detail-img {
+    transform: scale(1.05);
+}
+
+/* Product tag positioning */
+.product-tag {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background: #0066CC;
+    color: #fff;
+    padding: 0.35rem 0.85rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    z-index: 2;
+}
+
+.product-tag.new {
+    background: #28a745;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .product-image {
+        height: 250px;
+    }
+}
+
+@media (max-width: 767px) {
+    .product-image {
+        height: 220px;
+    }
+}
+
+@media (max-width: 991px) {
+  .about-main-img {
+    height: 400px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-main-img {
+    height: 300px;
+  }
+}
+
+.product-card:hover .product-img {
+    transform: scale(1.05);
 }
 
 .image-placeholder-large {
@@ -1421,6 +1511,132 @@ body {
     
     .footer {
         padding: 60px 0 20px;
+    }
+}
+
+/* ========================================
+   SLIDER BACKGROUND IMAGE (First Slide Only)
+   ======================================== */
+
+/* Background for first slide only */
+.slider-with-bg {
+    position: relative;
+}
+
+.slider-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/Slider1.png');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+/* Ensure content appears above background */
+.slider-with-bg .slide-content {
+    position: relative;
+    z-index: 1;
+}
+
+/* Optional: Add subtle overlay for text readability */
+.slider-with-bg .slide-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.7) 50%, rgba(255,255,255,0) 100%);
+    z-index: -1;
+}
+
+/* Fix carousel navigation arrows */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    border-radius: 50%;
+    background: rgba(0, 102, 204, 0.8);
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    opacity: 1;
+    background: rgba(0, 102, 204, 1);
+    transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 24px;
+    height: 24px;
+    background-size: 100% 100%;
+}
+
+/* Carousel indicators */
+.carousel-indicators {
+    bottom: 25px;
+    z-index: 10;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: #0066CC;
+    border-color: #fff;
+    width: 14px;
+    height: 14px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991px) {
+    .slider-bg {
+        background-size: cover;
+        background-position: center 30%;
+    }
+    
+    .slider-with-bg .slide-content::before {
+        background: linear-gradient(0deg, rgba(255,255,255,0.95) 0%, rgba(255,255,255,0.85) 100%);
+    }
+}
+
+@media (max-width: 767px) {
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 40px;
+        height: 40px;
+    }
+    
+    .carousel-control-prev {
+        left: 10px;
+    }
+    
+    .carousel-control-next {
+        right: 10px;
     }
 }
 

@@ -1,467 +1,550 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Products - BLUWAVE INTERNATIONAL</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Loader -->
     <div id="loader">
-        <div class="loader-content">
-            <div class="loader-logo">
-                <i class="fas fa-globe-americas fa-spin"></i>
-            </div>
-            <div class="loader-bar"></div>
-            <p>Loading...</p>
+      <div class="loader-content">
+        <div class="loader-logo">
+          <i class="fas fa-globe-americas fa-spin"></i>
         </div>
+        <div class="loader-bar"></div>
+        <p>Loading...</p>
+      </div>
     </div>
 
     <!-- Theme Toggle -->
     <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Theme">
-        <i class="fas fa-moon"></i>
+      <i class="fas fa-moon"></i>
     </button>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <div class="logo-container">
-                     <img width="25%" src="images/logo.png"/>
-                </div>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#salt">Refined Salt</a></li>
-                            <li><a class="dropdown-item" href="#vinegar">White Vinegar</a></li>
-                            <li><a class="dropdown-item" href="#rice">IR64 Rice</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="nav-cta">
-                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                </div>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-container">
+            <img width="25%" src="images/logo.png" />
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#salt">Refined Salt</a></li>
+                <li>
+                  <a class="dropdown-item" href="#vinegar">White Vinegar</a>
+                </li>
+                <li><a class="dropdown-item" href="#rice">IR64 Rice</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="nav-cta">
+            <a href="contact.html" class="btn btn-primary">Get Quote</a>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="animate-on-scroll">Our Products</h1>
-                    <p class="lead animate-on-scroll delay-100">Premium Quality Food Products</p>
-                    <nav aria-label="breadcrumb" class="animate-on-scroll delay-200">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">Products</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="animate-on-scroll">Our Products</h1>
+            <p class="lead animate-on-scroll delay-100">
+              Premium Quality Food Products
+            </p>
+            <nav aria-label="breadcrumb" class="animate-on-scroll delay-200">
+              <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">Products</li>
+              </ol>
+            </nav>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Products Filter -->
     <section class="products-filter py-4 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <div class="filter-tabs text-center">
-                        <button class="filter-btn active" data-filter="all">All Products</button>
-                        <button class="filter-btn" data-filter="salt">Refined Salt</button>
-                        <button class="filter-btn" data-filter="vinegar">White Vinegar</button>
-                        <button class="filter-btn" data-filter="rice">IR64 Rice</button>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="filter-tabs text-center">
+              <button class="filter-btn active" data-filter="all">
+                All Products
+              </button>
+              <button class="filter-btn" data-filter="salt">
+                Refined Salt
+              </button>
+              <button class="filter-btn" data-filter="vinegar">
+                White Vinegar
+              </button>
+              <button class="filter-btn" data-filter="rice">IR64 Rice</button>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Salt Products Section -->
     <section id="salt" class="product-category py-5">
-        <div class="container">
-            <div class="section-header text-center mb-5 animate-on-scroll">
-                <span class="section-subtitle">Category</span>
-                <h2 class="section-title">Refined Iodized Salt</h2>
-                <p class="section-desc">Premium quality free flow salt available in various packaging options</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 animate-on-scroll">
-                    <div class="product-detail-card">
-                        <div class="product-image">
-                            <div class="image-placeholder-large">
-                                <i class="fas fa-box"></i>
-                            </div>
-                            <span class="product-tag">Popular</span>
-                        </div>
-                        <div class="product-info">
-                            <h4>1 KG Paper Pouch</h4>
-                            <p>Pure & Refined Iodized Table Salt</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-weight-hanging"></i> Weight: 1 KG</li>
-                                <li><i class="fas fa-box"></i> Packaging: Paper Pouch</li>
-                                <li><i class="fas fa-check"></i> Iodized & Free Flow</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary btn-sm w-100">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 animate-on-scroll delay-100">
-                    <div class="product-detail-card">
-                        <div class="product-image">
-                            <div class="image-placeholder-large">
-                                <i class="fas fa-jar"></i>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h4>700g HDPE Jar</h4>
-                            <p>Pure & Refined Iodized Salt</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-weight-hanging"></i> Weight: 700g</li>
-                                <li><i class="fas fa-box"></i> Packaging: HDPE Jar</li>
-                                <li><i class="fas fa-check"></i> Retail Ready</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary btn-sm w-100">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 animate-on-scroll delay-200">
-                    <div class="product-detail-card">
-                        <div class="product-image">
-                            <div class="image-placeholder-large">
-                                <i class="fas fa-jar"></i>
-                            </div>
-                            <span class="product-tag new">New</span>
-                        </div>
-                        <div class="product-info">
-                            <h4>737g HDPE Jar</h4>
-                            <p>Pure & Refined Iodized Salt</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-weight-hanging"></i> Weight: 737g</li>
-                                <li><i class="fas fa-box"></i> Packaging: HDPE Jar</li>
-                                <li><i class="fas fa-check"></i> Premium Quality</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary btn-sm w-100">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6 animate-on-scroll delay-300">
-                    <div class="product-detail-card">
-                        <div class="product-image">
-                            <div class="image-placeholder-large">
-                                <i class="fas fa-box-open"></i>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h4>Bulk Packaging</h4>
-                            <p>Refined Iodized Free Flow Salt</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-weight-hanging"></i> Weight: Custom</li>
-                                <li><i class="fas fa-box"></i> Packaging: Bulk</li>
-                                <li><i class="fas fa-check"></i> B2B Orders</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary btn-sm w-100">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header text-center mb-5 animate-on-scroll">
+          <span class="section-subtitle">Category</span>
+          <h2 class="section-title">Refined Iodized Salt</h2>
+          <p class="section-desc">
+            Premium quality free flow salt available in various packaging
+            options
+          </p>
         </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 animate-on-scroll">
+            <div class="product-detail-card">
+              <div class="product-image">
+                <div class="image-placeholder-large">
+                  <img
+                    src="images/salt-1kg-pouch.png"
+                    alt="1 KG Paper Pouch"
+                    class="product-detail-img"
+                  />
+                </div>
+                <span class="product-tag">Popular</span>
+              </div>
+              <div class="product-info">
+                <h4>1 KG Paper Pouch</h4>
+                <p>Pure & Refined Iodized Table Salt</p>
+                <ul class="product-specs">
+                  <li><i class="fas fa-weight-hanging"></i> Weight: 1 KG</li>
+                  <li><i class="fas fa-box"></i> Packaging: Paper Pouch</li>
+                  <li><i class="fas fa-check"></i> Iodized & Free Flow</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm w-100"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 animate-on-scroll delay-100">
+            <div class="product-detail-card">
+              <div class="product-image">
+                <div class="image-placeholder-large">
+                  <img
+                    src="images/salt-700g-jar.png"
+                    alt="700g HDPE Jar"
+                    class="product-detail-img"
+                  />
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>700g HDPE Jar</h4>
+                <p>Pure & Refined Iodized Salt</p>
+                <ul class="product-specs">
+                  <li><i class="fas fa-weight-hanging"></i> Weight: 700g</li>
+                  <li><i class="fas fa-box"></i> Packaging: HDPE Jar</li>
+                  <li><i class="fas fa-check"></i> Retail Ready</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm w-100"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 animate-on-scroll delay-200">
+            <div class="product-detail-card">
+              <div class="product-image">
+                <div class="image-placeholder-large">
+                  <img
+                    src="images/salt-737g-jar.png"
+                    alt="737g HDPE Jar"
+                    class="product-detail-img"
+                  />
+                </div>
+                <span class="product-tag new">New</span>
+              </div>
+              <div class="product-info">
+                <h4>737g HDPE Jar</h4>
+                <p>Pure & Refined Iodized Salt</p>
+                <ul class="product-specs">
+                  <li><i class="fas fa-weight-hanging"></i> Weight: 737g</li>
+                  <li><i class="fas fa-box"></i> Packaging: HDPE Jar</li>
+                  <li><i class="fas fa-check"></i> Premium Quality</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm w-100"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 animate-on-scroll delay-300">
+            <div class="product-detail-card">
+              <div class="product-image">
+                <div class="image-placeholder-large">
+                  <i class="fas fa-box-open"></i>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Bulk Packaging</h4>
+                <p>Refined Iodized Free Flow Salt</p>
+                <ul class="product-specs">
+                  <li><i class="fas fa-weight-hanging"></i> Weight: Custom</li>
+                  <li><i class="fas fa-box"></i> Packaging: Bulk</li>
+                  <li><i class="fas fa-check"></i> B2B Orders</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm w-100"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Vinegar Products Section -->
     <section id="vinegar" class="product-category py-5 bg-light">
-        <div class="container">
-            <div class="section-header text-center mb-5 animate-on-scroll">
-                <span class="section-subtitle">Category</span>
-                <h2 class="section-title">Synthetic White Vinegar</h2>
-                <p class="section-desc">Food grade white vinegar in various bottle sizes</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 animate-on-scroll">
-                    <div class="product-detail-card">
-                        <div class="product-image">
-                            <div class="image-placeholder-large">
-                                <i class="fas fa-wine-bottle"></i>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h4>500 ML Bottle</h4>
-                            <p>Synthetic White Vinegar</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-flask"></i> Volume: 500 ML</li>
-                                <li><i class="fas fa-bottle-droplet"></i> Food Grade</li>
-                                <li><i class="fas fa-check"></i> Clear & Pure</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary btn-sm w-100">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 animate-on-scroll delay-100">
-                    <div class="product-detail-card">
-                        <div class="product-image">
-                            <div class="image-placeholder-large">
-                                <i class="fas fa-wine-bottle"></i>
-                            </div>
-                            <span class="product-tag">Best Seller</span>
-                        </div>
-                        <div class="product-info">
-                            <h4>1 L Bottle</h4>
-                            <p>Synthetic White Vinegar</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-flask"></i> Volume: 1 Liter</li>
-                                <li><i class="fas fa-bottle-droplet"></i> Food Grade</li>
-                                <li><i class="fas fa-check"></i> Household Size</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary btn-sm w-100">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 animate-on-scroll delay-200">
-                    <div class="product-detail-card">
-                        <div class="product-image">
-                            <div class="image-placeholder-large">
-                                <i class="fas fa-wine-bottle"></i>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h4>3.78 L Bottle</h4>
-                            <p>Synthetic White Vinegar</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-flask"></i> Volume: 3.78 L</li>
-                                <li><i class="fas fa-bottle-droplet"></i> Commercial Grade</li>
-                                <li><i class="fas fa-check"></i> Bulk Use</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary btn-sm w-100">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header text-center mb-5 animate-on-scroll">
+          <span class="section-subtitle">Category</span>
+          <h2 class="section-title">Synthetic White Vinegar</h2>
+          <p class="section-desc">
+            Food grade white vinegar in various bottle sizes
+          </p>
         </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 animate-on-scroll">
+            <div class="product-detail-card">
+              <div class="product-image">
+                <div class="image-placeholder-large">
+                  <i class="fas fa-wine-bottle"></i>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>500 ML Bottle</h4>
+                <p>Synthetic White Vinegar</p>
+                <ul class="product-specs">
+                  <li><i class="fas fa-flask"></i> Volume: 500 ML</li>
+                  <li><i class="fas fa-bottle-droplet"></i> Food Grade</li>
+                  <li><i class="fas fa-check"></i> Clear & Pure</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm w-100"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 animate-on-scroll delay-100">
+            <div class="product-detail-card">
+              <div class="product-image">
+                <div class="image-placeholder-large">
+                  <i class="fas fa-wine-bottle"></i>
+                </div>
+                <span class="product-tag">Best Seller</span>
+              </div>
+              <div class="product-info">
+                <h4>1 L Bottle</h4>
+                <p>Synthetic White Vinegar</p>
+                <ul class="product-specs">
+                  <li><i class="fas fa-flask"></i> Volume: 1 Liter</li>
+                  <li><i class="fas fa-bottle-droplet"></i> Food Grade</li>
+                  <li><i class="fas fa-check"></i> Household Size</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm w-100"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 animate-on-scroll delay-200">
+            <div class="product-detail-card">
+              <div class="product-image">
+                <div class="image-placeholder-large">
+                  <i class="fas fa-wine-bottle"></i>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>3.78 L Bottle</h4>
+                <p>Synthetic White Vinegar</p>
+                <ul class="product-specs">
+                  <li><i class="fas fa-flask"></i> Volume: 3.78 L</li>
+                  <li>
+                    <i class="fas fa-bottle-droplet"></i> Commercial Grade
+                  </li>
+                  <li><i class="fas fa-check"></i> Bulk Use</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm w-100"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Rice Products Section -->
     <section id="rice" class="product-category py-5">
-        <div class="container">
-            <div class="section-header text-center mb-5 animate-on-scroll">
-                <span class="section-subtitle">Category</span>
-                <h2 class="section-title">IR64 Parboiled Rice</h2>
-                <p class="section-desc">Premium quality IR64-5% parboiled rice for export and domestic markets</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6 animate-on-scroll">
-                    <div class="product-detail-card">
-                        <div class="product-image">
-                            <div class="image-placeholder-large">
-                                <i class="fas fa-seedling"></i>
-                            </div>
-                            <span class="product-tag">Export Quality</span>
-                        </div>
-                        <div class="product-info">
-                            <h4>IR64-5% Parboiled</h4>
-                            <p>Premium Quality Rice</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-percentage"></i> Broken: 5%</li>
-                                <li><i class="fas fa-globe"></i> Export Quality</li>
-                                <li><i class="fas fa-check"></i> Parboiled</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary btn-sm w-100">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 animate-on-scroll delay-100">
-                    <div class="product-detail-card">
-                        <div class="product-image">
-                            <div class="image-placeholder-large">
-                                <i class="fas fa-sack"></i>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h4>Bulk Packaging</h4>
-                            <p>IR64 Parboiled Rice</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-weight-hanging"></i> Weight: 25-50 KG</li>
-                                <li><i class="fas fa-box"></i> PP Bags</li>
-                                <li><i class="fas fa-check"></i> Wholesale</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary btn-sm w-100">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 col-md-6 animate-on-scroll delay-200">
-                    <div class="product-detail-card">
-                        <div class="product-image">
-                            <div class="image-placeholder-large">
-                                <i class="fas fa-box"></i>
-                            </div>
-                        </div>
-                        <div class="product-info">
-                            <h4>Retail Packaging</h4>
-                            <p>IR64 Parboiled Rice</p>
-                            <ul class="product-specs">
-                                <li><i class="fas fa-weight-hanging"></i> Weight: 1-5 KG</li>
-                                <li><i class="fas fa-box"></i> Consumer Packs</li>
-                                <li><i class="fas fa-check"></i> Retail Ready</li>
-                            </ul>
-                            <a href="contact.html" class="btn btn-primary btn-sm w-100">Inquire Now</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header text-center mb-5 animate-on-scroll">
+          <span class="section-subtitle">Category</span>
+          <h2 class="section-title">IR64 Parboiled Rice</h2>
+          <p class="section-desc">
+            Premium quality IR64-5% parboiled rice for export and domestic
+            markets
+          </p>
         </div>
+
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6 animate-on-scroll">
+            <div class="product-detail-card">
+              <div class="product-image">
+                <div class="image-placeholder-large">
+                  <i class="fas fa-seedling"></i>
+                </div>
+                <span class="product-tag">Export Quality</span>
+              </div>
+              <div class="product-info">
+                <h4>IR64-5% Parboiled</h4>
+                <p>Premium Quality Rice</p>
+                <ul class="product-specs">
+                  <li><i class="fas fa-percentage"></i> Broken: 5%</li>
+                  <li><i class="fas fa-globe"></i> Export Quality</li>
+                  <li><i class="fas fa-check"></i> Parboiled</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm w-100"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 animate-on-scroll delay-100">
+            <div class="product-detail-card">
+              <div class="product-image">
+                <div class="image-placeholder-large">
+                  <i class="fas fa-sack"></i>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Bulk Packaging</h4>
+                <p>IR64 Parboiled Rice</p>
+                <ul class="product-specs">
+                  <li>
+                    <i class="fas fa-weight-hanging"></i> Weight: 25-50 KG
+                  </li>
+                  <li><i class="fas fa-box"></i> PP Bags</li>
+                  <li><i class="fas fa-check"></i> Wholesale</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm w-100"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 animate-on-scroll delay-200">
+            <div class="product-detail-card">
+              <div class="product-image">
+                <div class="image-placeholder-large">
+                  <i class="fas fa-box"></i>
+                </div>
+              </div>
+              <div class="product-info">
+                <h4>Retail Packaging</h4>
+                <p>IR64 Parboiled Rice</p>
+                <ul class="product-specs">
+                  <li><i class="fas fa-weight-hanging"></i> Weight: 1-5 KG</li>
+                  <li><i class="fas fa-box"></i> Consumer Packs</li>
+                  <li><i class="fas fa-check"></i> Retail Ready</li>
+                </ul>
+                <a href="contact.html" class="btn btn-primary btn-sm w-100"
+                  >Inquire Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Why Choose Us -->
     <section class="why-choose py-5 bg-light">
-        <div class="container">
-            <div class="section-header text-center mb-5 animate-on-scroll">
-                <span class="section-subtitle">Why Choose Us</span>
-                <h2 class="section-title">Our Advantages</h2>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 animate-on-scroll">
-                    <div class="advantage-card text-center">
-                        <div class="advantage-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h4>ISO Certified</h4>
-                        <p>International quality standards</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 animate-on-scroll delay-100">
-                    <div class="advantage-card text-center">
-                        <div class="advantage-icon">
-                            <i class="fas fa-shipping-fast"></i>
-                        </div>
-                        <h4>Timely Delivery</h4>
-                        <p>Efficient logistics network</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 animate-on-scroll delay-200">
-                    <div class="advantage-card text-center">
-                        <div class="advantage-icon">
-                            <i class="fas fa-hand-holding-usd"></i>
-                        </div>
-                        <h4>Competitive Pricing</h4>
-                        <p>Best value for money</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 animate-on-scroll delay-300">
-                    <div class="advantage-card text-center">
-                        <div class="advantage-icon">
-                            <i class="fas fa-headset"></i>
-                        </div>
-                        <h4>24/7 Support</h4>
-                        <p>Always here to help</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header text-center mb-5 animate-on-scroll">
+          <span class="section-subtitle">Why Choose Us</span>
+          <h2 class="section-title">Our Advantages</h2>
         </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 animate-on-scroll">
+            <div class="advantage-card text-center">
+              <div class="advantage-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h4>ISO Certified</h4>
+              <p>International quality standards</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 animate-on-scroll delay-100">
+            <div class="advantage-card text-center">
+              <div class="advantage-icon">
+                <i class="fas fa-shipping-fast"></i>
+              </div>
+              <h4>Timely Delivery</h4>
+              <p>Efficient logistics network</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 animate-on-scroll delay-200">
+            <div class="advantage-card text-center">
+              <div class="advantage-icon">
+                <i class="fas fa-hand-holding-usd"></i>
+              </div>
+              <h4>Competitive Pricing</h4>
+              <p>Best value for money</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 animate-on-scroll delay-300">
+            <div class="advantage-card text-center">
+              <div class="advantage-icon">
+                <i class="fas fa-headset"></i>
+              </div>
+              <h4>24/7 Support</h4>
+              <p>Always here to help</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer (Same as other pages) -->
     <footer class="footer">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-brand">
-                        <div class="logo-container">
-                            <img width="25%" src="images/logo.png"/>
-                        </div>
-                        <p>Pure Quality. Trusted Manufacturing. Your reliable partner for premium food products.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-6">
-                    <h5>Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <h5>Products</h5>
-                    <ul class="footer-links">
-                        <li><a href="#salt">Refined Salt</a></li>
-                        <li><a href="#vinegar">White Vinegar</a></li>
-                        <li><a href="#rice">IR64 Rice</a></li>
-                        <li><a href="products.html">All Products</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <h5>Contact Info</h5>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i> 238-239, Sector II, Kandla SEZ, Gandhidham, Gujarat - 370201</li>
-                        <li><i class="fas fa-phone"></i> +91 94285 06347</li>
-                        <li><i class="fas fa-phone"></i> +91 97125 29999</li>
-                        <li><i class="fas fa-envelope"></i> bluwavein@gmail.com</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand">
+              <div class="logo-container">
+                <img width="25%" src="images/logo.png" />
+              </div>
+              <p>
+                Pure Quality. Trusted Manufacturing. Your reliable partner for
+                premium food products.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </div>
             </div>
-            
-            <hr class="footer-divider">
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="copyright">&copy; 2026 BLUWAVE INTERNATIONAL. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="footer-bottom">Food Compliance and ISO certified company</p>
-                </div>
-            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Products</h5>
+            <ul class="footer-links">
+              <li><a href="#salt">Refined Salt</a></li>
+              <li><a href="#vinegar">White Vinegar</a></li>
+              <li><a href="#rice">IR64 Rice</a></li>
+              <li><a href="products.html">All Products</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact Info</h5>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 238-239, Sector II, Kandla
+                SEZ, Gandhidham, Gujarat - 370201
+              </li>
+              <li><i class="fas fa-phone"></i> +91 94285 06347</li>
+              <li><i class="fas fa-phone"></i> +91 97125 29999</li>
+              <li><i class="fas fa-envelope"></i> bluwavein@gmail.com</li>
+            </ul>
+          </div>
         </div>
+
+        <hr class="footer-divider" />
+
+        <div class="row">
+          <div class="col-md-6">
+            <p class="copyright">
+              &copy; 2026 BLUWAVE INTERNATIONAL. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="footer-bottom">
+              Food Compliance and ISO certified company
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <button id="goToTop" class="go-to-top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

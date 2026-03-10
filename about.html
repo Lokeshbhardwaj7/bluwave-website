@@ -1,343 +1,442 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" data-theme="light">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About Us - BLUWAVE INTERNATIONAL</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <!-- Loader -->
     <div id="loader">
-        <div class="loader-content">
-            <div class="loader-logo">
-                <i class="fas fa-globe-americas fa-spin"></i>
-            </div>
-            <div class="loader-bar"></div>
-            <p>Loading...</p>
+      <div class="loader-content">
+        <div class="loader-logo">
+          <i class="fas fa-globe-americas fa-spin"></i>
         </div>
+        <div class="loader-bar"></div>
+        <p>Loading...</p>
+      </div>
     </div>
 
     <!-- Theme Toggle -->
     <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Theme">
-        <i class="fas fa-moon"></i>
+      <i class="fas fa-moon"></i>
     </button>
 
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <div class="logo-container">
-                    <img width="25%" src="images/logo.png"/>
-                </div>
-            </a>
-            
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Products
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="products.html#salt">Refined Salt</a></li>
-                            <li><a class="dropdown-item" href="products.html#vinegar">White Vinegar</a></li>
-                            <li><a class="dropdown-item" href="products.html#rice">IR64 Rice</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-                <div class="nav-cta">
-                    <a href="contact.html" class="btn btn-primary">Get Quote</a>
-                </div>
-            </div>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <div class="logo-container">
+            <img width="25%" src="images/logo.png" />
+          </div>
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html">About Us</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+              >
+                Products
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="products.html#salt"
+                    >Refined Salt</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="products.html#vinegar"
+                    >White Vinegar</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="products.html#rice"
+                    >IR64 Rice</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+          <div class="nav-cta">
+            <a href="contact.html" class="btn btn-primary">Get Quote</a>
+          </div>
         </div>
+      </div>
     </nav>
 
     <!-- Page Header -->
     <section class="page-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 mx-auto text-center">
-                    <h1 class="animate-on-scroll">About BLUWAVE INTERNATIONAL</h1>
-                    <p class="lead animate-on-scroll delay-100">Pure Quality. Trusted Manufacturing.</p>
-                    <nav aria-label="breadcrumb" class="animate-on-scroll delay-200">
-                        <ol class="breadcrumb justify-content-center">
-                            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                            <li class="breadcrumb-item active">About Us</li>
-                        </ol>
-                    </nav>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto text-center">
+            <h1 class="animate-on-scroll">About BLUWAVE INTERNATIONAL</h1>
+            <p class="lead animate-on-scroll delay-100">
+              Pure Quality. Trusted Manufacturing.
+            </p>
+            <nav aria-label="breadcrumb" class="animate-on-scroll delay-200">
+              <ol class="breadcrumb justify-content-center">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active">About Us</li>
+              </ol>
+            </nav>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Company Overview -->
     <section class="company-overview py-5">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
-                    <div class="about-image-wrapper">
-                        <div class="about-image-main">
-                            <div class="image-placeholder gradient-bg">
-                                <i class="fas fa-industry"></i>
-                                <span>Our Facility</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 animate-on-scroll delay-200">
-                    <span class="section-subtitle">Who We Are</span>
-                    <h2 class="section-title">Leading Manufacturer in Kandla SEZ</h2>
-                    <p class="lead-text">BLUWAVE INTERNATIONAL is a premier manufacturing company located in the Kandla Special Economic Zone, Gandhidham, Gujarat. We specialize in producing high-quality food products that meet international standards.</p>
-                    <p>With our state-of-the-art manufacturing facility and commitment to excellence, we have established ourselves as a trusted name in the food industry. Our product range includes refined iodized salt, synthetic white vinegar, and IR64 parboiled rice, all manufactured under strict quality control measures.</p>
-                    
-                    <div class="about-stats-row">
-                        <div class="stat-box">
-                            <h3>10+</h3>
-                            <p>Years Experience</p>
-                        </div>
-                        <div class="stat-box">
-                            <h3>50+</h3>
-                            <p>Countries Served</p>
-                        </div>
-                        <div class="stat-box">
-                            <h3>100%</h3>
-                            <p>Quality Assured</p>
-                        </div>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0 animate-on-scroll">
+            <div class="about-image-wrapper">
+              <div class="about-image-main">
+                <img
+                  src="images/about-manufacturing.jpg"
+                  alt="Manufacturing Excellence"
+                  class="about-main-img"
+                />
+              </div>
             </div>
+          </div>
+          <div class="col-lg-6 animate-on-scroll delay-200">
+            <span class="section-subtitle">Who We Are</span>
+            <h2 class="section-title">Leading Manufacturer in Kandla SEZ</h2>
+            <p class="lead-text">
+              BLUWAVE INTERNATIONAL is a premier manufacturing company located
+              in the Kandla Special Economic Zone, Gandhidham, Gujarat. We
+              specialize in producing high-quality food products that meet
+              international standards.
+            </p>
+            <p>
+              With our state-of-the-art manufacturing facility and commitment to
+              excellence, we have established ourselves as a trusted name in the
+              food industry. Our product range includes refined iodized salt,
+              synthetic white vinegar, and IR64 parboiled rice, all manufactured
+              under strict quality control measures.
+            </p>
+
+            <div class="about-stats-row">
+              <div class="stat-box">
+                <h3>10+</h3>
+                <p>Years Experience</p>
+              </div>
+              <div class="stat-box">
+                <h3>50+</h3>
+                <p>Countries Served</p>
+              </div>
+              <div class="stat-box">
+                <h3>100%</h3>
+                <p>Quality Assured</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Mission & Vision -->
     <section class="mission-vision py-5 bg-light">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-6 animate-on-scroll">
-                    <div class="mv-card">
-                        <div class="mv-icon">
-                            <i class="fas fa-bullseye"></i>
-                        </div>
-                        <h3>Our Mission</h3>
-                        <p>To manufacture and deliver premium quality food products that exceed customer expectations while maintaining the highest standards of food safety and environmental responsibility. We aim to be the preferred choice for businesses seeking reliable, certified food products.</p>
-                    </div>
-                </div>
-                <div class="col-lg-6 animate-on-scroll delay-200">
-                    <div class="mv-card">
-                        <div class="mv-icon">
-                            <i class="fas fa-eye"></i>
-                        </div>
-                        <h3>Our Vision</h3>
-                        <p>To become a globally recognized brand in food manufacturing, known for our commitment to quality, innovation, and customer satisfaction. We envision expanding our reach to new markets while maintaining our dedication to pure, trusted manufacturing.</p>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-6 animate-on-scroll">
+            <div class="mv-card">
+              <div class="mv-icon">
+                <i class="fas fa-bullseye"></i>
+              </div>
+              <h3>Our Mission</h3>
+              <p>
+                To manufacture and deliver premium quality food products that
+                exceed customer expectations while maintaining the highest
+                standards of food safety and environmental responsibility. We
+                aim to be the preferred choice for businesses seeking reliable,
+                certified food products.
+              </p>
             </div>
+          </div>
+          <div class="col-lg-6 animate-on-scroll delay-200">
+            <div class="mv-card">
+              <div class="mv-icon">
+                <i class="fas fa-eye"></i>
+              </div>
+              <h3>Our Vision</h3>
+              <p>
+                To become a globally recognized brand in food manufacturing,
+                known for our commitment to quality, innovation, and customer
+                satisfaction. We envision expanding our reach to new markets
+                while maintaining our dedication to pure, trusted manufacturing.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Values Section -->
     <section class="values-section py-5">
-        <div class="container">
-            <div class="section-header text-center mb-5 animate-on-scroll">
-                <span class="section-subtitle">Our Values</span>
-                <h2 class="section-title">What Drives Us</h2>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6 animate-on-scroll">
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-certificate"></i>
-                        </div>
-                        <h4>Quality First</h4>
-                        <p>ISO 22000 certified processes ensuring premium quality in every product</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 animate-on-scroll delay-100">
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-handshake"></i>
-                        </div>
-                        <h4>Trust & Integrity</h4>
-                        <p>Building lasting relationships through transparency and honesty</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 animate-on-scroll delay-200">
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-lightbulb"></i>
-                        </div>
-                        <h4>Innovation</h4>
-                        <p>Continuous improvement in manufacturing processes and products</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 animate-on-scroll delay-300">
-                    <div class="value-card">
-                        <div class="value-icon">
-                            <i class="fas fa-leaf"></i>
-                        </div>
-                        <h4>Sustainability</h4>
-                        <p>Environmentally responsible manufacturing practices</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header text-center mb-5 animate-on-scroll">
+          <span class="section-subtitle">Our Values</span>
+          <h2 class="section-title">What Drives Us</h2>
         </div>
+
+        <div class="row g-4">
+          <div class="col-lg-3 col-md-6 animate-on-scroll">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h4>Quality First</h4>
+              <p>
+                ISO 22000 certified processes ensuring premium quality in every
+                product
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 animate-on-scroll delay-100">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-handshake"></i>
+              </div>
+              <h4>Trust & Integrity</h4>
+              <p>
+                Building lasting relationships through transparency and honesty
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 animate-on-scroll delay-200">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-lightbulb"></i>
+              </div>
+              <h4>Innovation</h4>
+              <p>
+                Continuous improvement in manufacturing processes and products
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 animate-on-scroll delay-300">
+            <div class="value-card">
+              <div class="value-icon">
+                <i class="fas fa-leaf"></i>
+              </div>
+              <h4>Sustainability</h4>
+              <p>Environmentally responsible manufacturing practices</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Infrastructure -->
     <section class="infrastructure py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0 animate-on-scroll">
-                    <div class="about-image-wrapper">
-                        <div class="about-image-main">
-                            <div class="image-placeholder gradient-bg">
-                                <i class="fas fa-warehouse"></i>
-                                <span>Modern Facility</span>
-                            </div>
-                        </div>
-                    </div>
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 order-lg-2 mb-4 mb-lg-0 animate-on-scroll">
+            <div class="about-image-wrapper">
+              <div class="about-image-main">
+                <div class="image-placeholder gradient-bg">
+                  <i class="fas fa-warehouse"></i>
+                  <span>Modern Facility</span>
                 </div>
-                <div class="col-lg-6 order-lg-1 animate-on-scroll delay-200">
-                    <span class="section-subtitle">Infrastructure</span>
-                    <h2 class="section-title">State-of-the-Art Manufacturing</h2>
-                    <p>Our facility in Kandla Special Economic Zone is equipped with modern machinery and technology to ensure efficient production and consistent quality.</p>
-                    
-                    <ul class="feature-list">
-                        <li><i class="fas fa-check-circle"></i> Automated production lines</li>
-                        <li><i class="fas fa-check-circle"></i> Quality control laboratories</li>
-                        <li><i class="fas fa-check-circle"></i> Hygienic processing environment</li>
-                        <li><i class="fas fa-check-circle"></i> Advanced packaging systems</li>
-                        <li><i class="fas fa-check-circle"></i> Climate-controlled storage</li>
-                        <li><i class="fas fa-check-circle"></i> Efficient logistics network</li>
-                    </ul>
-                </div>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-6 order-lg-1 animate-on-scroll delay-200">
+            <span class="section-subtitle">Infrastructure</span>
+            <h2 class="section-title">State-of-the-Art Manufacturing</h2>
+            <p>
+              Our facility in Kandla Special Economic Zone is equipped with
+              modern machinery and technology to ensure efficient production and
+              consistent quality.
+            </p>
+
+            <ul class="feature-list">
+              <li>
+                <i class="fas fa-check-circle"></i> Automated production lines
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Quality control laboratories
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Hygienic processing
+                environment
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Advanced packaging systems
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Climate-controlled storage
+              </li>
+              <li>
+                <i class="fas fa-check-circle"></i> Efficient logistics network
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Certifications -->
     <section class="certifications-detail py-5">
-        <div class="container">
-            <div class="section-header text-center mb-5 animate-on-scroll">
-                <span class="section-subtitle">Certifications</span>
-                <h2 class="section-title">Quality Assurances</h2>
-            </div>
-            
-            <div class="row justify-content-center">
-                <div class="col-lg-10">
-                    <div class="certifications-grid-detailed">
-                        <div class="cert-card animate-on-scroll">
-                            <div class="cert-icon iso">
-                                <i class="fas fa-shield-alt"></i>
-                            </div>
-                            <h4>ISO 22000</h4>
-                            <p>Food Safety Management System certification ensuring international standards in food safety</p>
-                        </div>
-                        <div class="cert-card animate-on-scroll delay-100">
-                            <div class="cert-icon food">
-                                <i class="fas fa-check-double"></i>
-                            </div>
-                            <h4>Food Safety</h4>
-                            <p>HACCP certified processes for hazard analysis and critical control points</p>
-                        </div>
-                        <div class="cert-card animate-on-scroll delay-200">
-                            <div class="cert-icon quality">
-                                <i class="fas fa-award"></i>
-                            </div>
-                            <h4>100% Certified</h4>
-                            <p>All products undergo rigorous quality testing and certification</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header text-center mb-5 animate-on-scroll">
+          <span class="section-subtitle">Certifications</span>
+          <h2 class="section-title">Quality Assurances</h2>
         </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div class="certifications-grid-detailed">
+              <div class="cert-card animate-on-scroll">
+                <div class="cert-icon iso">
+                  <i class="fas fa-shield-alt"></i>
+                </div>
+                <h4>ISO 22000</h4>
+                <p>
+                  Food Safety Management System certification ensuring
+                  international standards in food safety
+                </p>
+              </div>
+              <div class="cert-card animate-on-scroll delay-100">
+                <div class="cert-icon food">
+                  <i class="fas fa-check-double"></i>
+                </div>
+                <h4>Food Safety</h4>
+                <p>
+                  HACCP certified processes for hazard analysis and critical
+                  control points
+                </p>
+              </div>
+              <div class="cert-card animate-on-scroll delay-200">
+                <div class="cert-icon quality">
+                  <i class="fas fa-award"></i>
+                </div>
+                <h4>100% Certified</h4>
+                <p>
+                  All products undergo rigorous quality testing and
+                  certification
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer (Same as index.html) -->
     <footer class="footer">
-        <div class="container">
-            <div class="row g-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="footer-brand">
-                        <div class="logo-container">
-                             <img width="25%" src="images/logo.png"/>
-                        </div>
-                        <p>Pure Quality. Trusted Manufacturing. Your reliable partner for premium food products.</p>
-                        <div class="social-links">
-                            <a href="#"><i class="fab fa-facebook-f"></i></a>
-                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="#"><i class="fab fa-instagram"></i></a>
-                            <a href="#"><i class="fab fa-whatsapp"></i></a>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-2 col-md-6">
-                    <h5>Quick Links</h5>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="products.html">Products</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <h5>Products</h5>
-                    <ul class="footer-links">
-                        <li><a href="products.html#salt">Refined Salt</a></li>
-                        <li><a href="products.html#vinegar">White Vinegar</a></li>
-                        <li><a href="products.html#rice">IR64 Rice</a></li>
-                        <li><a href="products.html">All Products</a></li>
-                    </ul>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <h5>Contact Info</h5>
-                    <ul class="footer-contact">
-                        <li><i class="fas fa-map-marker-alt"></i> 238-239, Sector II, Kandla SEZ, Gandhidham, Gujarat - 370201</li>
-                        <li><i class="fas fa-phone"></i> +91 94285 06347</li>
-                        <li><i class="fas fa-phone"></i> +91 97125 29999</li>
-                        <li><i class="fas fa-envelope"></i> bluwavein@gmail.com</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-brand">
+              <div class="logo-container">
+                <img width="25%" src="images/logo.png" />
+              </div>
+              <p>
+                Pure Quality. Trusted Manufacturing. Your reliable partner for
+                premium food products.
+              </p>
+              <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-whatsapp"></i></a>
+              </div>
             </div>
-            
-            <hr class="footer-divider">
-            
-            <div class="row">
-                <div class="col-md-6">
-                    <p class="copyright">&copy; 2026 BLUWAVE INTERNATIONAL. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="footer-bottom">Food Compliance and ISO certified company</p>
-                </div>
-            </div>
+          </div>
+
+          <div class="col-lg-2 col-md-6">
+            <h5>Quick Links</h5>
+            <ul class="footer-links">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="products.html">Products</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Products</h5>
+            <ul class="footer-links">
+              <li><a href="products.html#salt">Refined Salt</a></li>
+              <li><a href="products.html#vinegar">White Vinegar</a></li>
+              <li><a href="products.html#rice">IR64 Rice</a></li>
+              <li><a href="products.html">All Products</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <h5>Contact Info</h5>
+            <ul class="footer-contact">
+              <li>
+                <i class="fas fa-map-marker-alt"></i> 238-239, Sector II, Kandla
+                SEZ, Gandhidham, Gujarat - 370201
+              </li>
+              <li><i class="fas fa-phone"></i> +91 94285 06347</li>
+              <li><i class="fas fa-phone"></i> +91 97125 29999</li>
+              <li><i class="fas fa-envelope"></i> bluwavein@gmail.com</li>
+            </ul>
+          </div>
         </div>
+
+        <hr class="footer-divider" />
+
+        <div class="row">
+          <div class="col-md-6">
+            <p class="copyright">
+              &copy; 2026 BLUWAVE INTERNATIONAL. All rights reserved.
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="footer-bottom">
+              Food Compliance and ISO certified company
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
     <button id="goToTop" class="go-to-top">
-        <i class="fas fa-arrow-up"></i>
+      <i class="fas fa-arrow-up"></i>
     </button>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/main.js"></script>
-</body>
+  </body>
 </html>

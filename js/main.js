@@ -321,6 +321,31 @@ document.addEventListener('DOMContentLoaded', function() {
     console.log('BLUWAVE INTERNATIONAL Website Loaded Successfully!');
 });
 
+
+   
+   // Initialize Bootstrap Carousel manually to ensure it works
+   document.addEventListener('DOMContentLoaded', function() {
+       const carouselElement = document.getElementById('homeSlider');
+       if (carouselElement) {
+           const carousel = new bootstrap.Carousel(carouselElement, {
+               interval: 5000,
+               wrap: true,
+               keyboard: true,
+               pause: 'hover'
+           });
+           
+           // Test if controls are working
+           const prevButton = carouselElement.querySelector('.carousel-control-prev');
+           const nextButton = carouselElement.querySelector('.carousel-control-next');
+           
+           if (prevButton && nextButton) {
+               console.log('Carousel controls found and initialized');
+           } else {
+               console.error('Carousel controls not found');
+           }
+       }
+   });
+
 // ========================================
 // UTILITY FUNCTIONS
 // ========================================
